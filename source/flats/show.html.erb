@@ -4,7 +4,47 @@
 <% flat = data.flats[owner] %>
 
 <!-- Inject flat data in template -->
-<%= image_tag flat.owner_picture, class: "img-circle" %>
-<p><%= flat.owner_name %></p>
-<h1><%= flat.description %></h1>
-<p><%= flat.city %></p>
+<!-- <div class="container"> -->
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url(<%= image_path flat.picture%> ); height: 50vh; background-position: center;">
+ </div>
+<!-- </div> -->
+<div class="header-flat padded">
+  <div class="container">
+    <div class="row">
+        <div class="owner col-xs-12 col-sm-6 col-sm-offset-1">
+            <div class="header-flat-image">
+            <%= image_tag flat.owner_picture, class: "img-circle avatar-xlarge" %>
+            <p><%= flat.owner_name %></p>
+            </div>
+            <div class="header-flat-description">
+              <p><%= flat.city %></p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="booking col-xs-12 col-sm-4 col">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-grey">
+  <div class="container">
+    <div class="row">
+      <h4>About this flat</h4>
+      <p><%= flat.summary %></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="description text-center">
+    <h1><%= flat.description %></h1>
+    <p><%= flat.city %></p>
+</div> -->
+
+

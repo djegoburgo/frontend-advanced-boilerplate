@@ -1,0 +1,29 @@
+.owner {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding-left: 0;
+  align-items: center;
+  justify-content: text-around;
+}
+
+.header-flat-image {
+  padding:  30px;
+}
+
+.header-flat-description {
+  flex: 0, 0, 50%;
+}
+.fa-star{
+  color: $yellow;
+}
+.wrapper-grey {
+  background : white;
+}
+.booking {
+  margin: 20px 0;
+  margin-right: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 3px;
+}
