@@ -9,6 +9,10 @@
 
 // Our CSS
 @import "layout/*";
+@import "layout/footer";
 @import "components/*";
+@import "components/card";
+@import "components/badge";
+
 @import "pages/*";
 @import "vendor/*";
