@@ -1,1 +1,13 @@
-<h1>test</h1>
+<h1>Meet our team :</h1>
+
+
+<% team_members = %w(seb, anne, romain) %>
+
+<%= image_tag "seb.jpg", id: "seb", class: "img-circle" %>
+<%= image_tag "anne.jpg", id: "anne", class: "img-circle" %>
+<%= image_tag "romain.jpeg", id: "romain", class: "img-circle" %>
+
+<% team_members.each do |member| %>
+  <%= member %>
+<% end %>
+
