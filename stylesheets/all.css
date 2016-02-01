@@ -11,7 +11,6 @@
  * (see http://getbootstrap.com/customize/#less-variables)
  * ------------------------------------- */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url(components/_card.css);
 /* line 9, /Users/djego/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -9407,6 +9406,61 @@ button.close {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 50px; }
 
+/* line 1, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+/* line 10, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+/* line 15, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px; }
+
+/* line 21, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+  /* line 25, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+  .card-description h2 {
+    font-size: 22px; }
+  /* line 28, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+  .card-description p {
+    font-size: 15px; }
+
+/*.card-description h2 {
+  font-size: 22px;
+}*/
+/*.card-description p {
+  font-size: 15px;
+}*/
+/* line 38, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0; }
+
+/* line 47, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.scss */
+.card-link:hover {
+  opacity: 0.1; }
+
 /* line 1, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_feature.scss */
 .features img {
   width: 100px; }
@@ -9419,60 +9473,9 @@ button.close {
     font-size: 15px;
     font-weight: lighter; }
 
-/* line 1, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card {
-  height: 250px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  background-size: cover !important;
-  color: white;
-  position: relative;
-  border-radius: 5px;
-  margin-bottom: 20px; }
-
-/* line 10, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px; }
-
-/* line 15, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px; }
-
-/* line 21, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px; }
-  /* line 25, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-  .card-description h2 {
-    font-size: 22px; }
-  /* line 28, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-  .card-description p {
-    font-size: 15px; }
-
-/*.card-description h2 {
-  font-size: 22px;
-}*/
-/*.card-description p {
-  font-size: 15px;
-}*/
-/* line 38, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0; }
-
-/* line 47, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/components/_card.css */
-.card-link:hover {
-  opacity: 0.1; }
+/* line 1, /Users/djego/code/djegoburgo/fullstack-challenges/frontend-advanced-boilerplate/source/stylesheets/pages/_home.scss */
+#features h2 {
+  font-size: 25px; }
 
 /*
 ==============================================
