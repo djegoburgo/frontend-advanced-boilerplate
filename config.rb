@@ -13,6 +13,10 @@ activate :autoprefixer
 ###
 # Page options, layouts, aliases and proxies
 ###
+#
+["anne", "seb", "romain"].each do |name|
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
+end
 
 # Per-page layout changes:
 #
